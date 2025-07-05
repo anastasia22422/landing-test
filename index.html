@@ -35,6 +35,28 @@
       type="module"
       defer
     ></script>
+    <style>
+      .footer {
+  position: sticky;
+  z-index: -1;
+  bottom: 0;
+  height: 200px;
+  background-image: url(./images/footer-mobile.png);
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 576px) {
+  .footer {
+    height: 400px;
+  }
+}
+@media (min-width: 1024px) {
+  .footer {
+    height: 460px;
+    background-image: url(./images/footer-desktop.png);
+  }
+}
+    </style>
   </head>
 
   <body class="page__body">
