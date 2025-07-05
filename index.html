@@ -35,6 +35,34 @@
       type="module"
       defer
     ></script>
+    <style>
+      .footer {
+  position: sticky;
+  z-index: -1;
+  bottom: 0;
+
+  height: 200px;
+  background-image: url(./images/footer-mobile.png);
+  background-position: center;
+  background-size: cover;
+}
+
+/* Tablet (e.g., min-width: 577px and max-width: 1023px) */
+@media (min-width: 577px) and (max-width: 1023px) {
+  .footer {
+    height: 400px;
+    /* Optionally change background-image if you want */
+  }
+}
+
+/* Desktop (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .footer {
+    height: 460px;
+    background-image: url(./images/footer-desktop.png);
+  }
+}
+    </style>
   </head>
 
   <body class="page__body">
