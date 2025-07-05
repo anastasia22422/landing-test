@@ -35,7 +35,16 @@
       type="module"
       defer
     ></script>
-  
+  <style>
+.footer-image {
+    height: 460px;
+  }
+  @media (max-width: 576px) {
+    .footer-image {
+      height: 200px;
+    }
+  }
+</style>
   </head>
 
   <body class="page__body">
@@ -557,7 +566,7 @@
   <picture>
     <source media="(max-width: 576px)" srcset="./images/footer-mobile.png" />
     <source media="(max-width: 1023px)" srcset="./images/footer-desktop.png" />
-    <img src="images/footer-desktop.png" alt="Footer image" />
+    <img src="images/footer-desktop.png" alt="Footer image" class="footer-image"/>
   </picture>
 </footer>
 
