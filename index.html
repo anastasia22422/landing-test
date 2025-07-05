@@ -35,33 +35,7 @@
       type="module"
       defer
     ></script>
-    <style>
-      .footer {
-  position: sticky;
-  z-index: -1;
-  bottom: 0;
-
-  height: 200px;
-
-  visibility: hidden;
-  background-image: url(./images/footer-mobile.png);
-  background-position: center;
-  background-size: cover;
-
-  @include on-tablet {
-    height: 400px;
-  }
-
-  @include on-desktop {
-    height: 460px;
-    background-image: url(./images/footer-desktop.png);
-  }
-}
-
-body.loaded .footer {
-  visibility: visible;
-}
-    </style>
+  
   </head>
 
   <body class="page__body">
@@ -580,6 +554,14 @@ body.loaded .footer {
       </div>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">   <picture style="background-position: center; background-size: cover;">
+                    <source
+                      media="(max-width: 576px)"
+                      srcset="./images/products/footer-mobile.png"
+                    />
+                    <source
+                      media="(max-width: 1023px)"
+                      srcset="./images/footer-desktop.png"
+                    /></footer>
   </body>
 </html>
