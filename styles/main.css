@@ -209,6 +209,10 @@
   top: 0;
   margin-bottom: 32px;
 }
+@media (min-width: 576px) {
+  .menu__top {
+    margin-bottom: 0;
+  }
 }
 .menu__nav {
   margin-bottom: 48px;
