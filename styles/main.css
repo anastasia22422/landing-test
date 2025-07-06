@@ -209,14 +209,6 @@
   top: 0;
   margin-bottom: 32px;
 }
-@media (max-width: 576px) {
-  .menu__top {
-    margin-bottom: 0;
-  }
-@media (min-width: 577px) {
-  .menu__top {
-    margin-bottom: 50px;
-  }
 }
 .menu__nav {
   margin-bottom: 48px;
